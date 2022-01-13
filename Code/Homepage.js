@@ -13,3 +13,9 @@ $(document).ready(function(){
     
     
     });
+
+function valueSender(setup){
+        var gim = setup;
+        localStorage.setItem("myValue", gim);
+        window.location.href="../Halaman Pembelian/stuff.js";
+}

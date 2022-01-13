@@ -9,8 +9,8 @@ html {
 }
 
 .corner-logo {
-  width: 70px;
-  height: 70px;
+  width: 200px;
+  height: auto;
 }
 
 .head-up {
@@ -35,7 +35,7 @@ nav {
 
 nav > a {
   margin-left: 10px;
-  margin-top: 20px;
+  margin-top: 25px;
 
   color: antiquewhite;
 }
@@ -135,13 +135,12 @@ nav > a {
 .card-voc > label > .opsi-sider {
   position: relative;
   display: inline-block;
-  background: #323232;
+  background: white;
   padding: 15px 25px;
-  color: antiquewhite;
+  color: #1a1b1d;
   /* text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5); */
   font-size: 20px;
   border-radius: 10px;
-  border-style: groove;
 
   transition: 0.5s;
   user-select: none;
@@ -193,8 +192,7 @@ nav > a {
 }
 
 .mechant {
-  max-width: 20%;
-  max-height: 50px;
+  width: 130px;
 }
 
 .opsi-sider > div {
@@ -212,13 +210,13 @@ nav > a {
 .card-buy > label > .opsi-sider {
   position: relative;
   display: flex;
-  background: #323232;
+  background: white;
   padding: 15px 30px;
-  color: antiquewhite;
+  color: #323232;
   /* text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5); */
   font-size: 20px;
   border-radius: 10px;
-  border-style: groove;
+  border-style: none;
 
   transition: 0.5s;
   user-select: none;
