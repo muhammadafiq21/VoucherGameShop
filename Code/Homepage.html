@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>GameVocs-19</title>
 </head>
 <body>
+      
 
+    <!-- Navbar -->
     <div class="navbar">
         <div class="logo">
-            <img src="img\Gamepad.png" class="gamepad" alt="logo" width="105px">
-            <h4>GameVoCS-19</h4>
+            <img src="Logo\TokoTokoTok Logo-wide.png" class="gamepad" alt="logo" width="105px">
+            <!-- <h4>GameVoCS-19</h4> -->
         </div>
         <div class="bacaan">
             <p><font size="4">SUDAH SIAP MENGHABISKAN DOMPET MAMAH?</font></p>
@@ -24,6 +28,8 @@
         </div>
         <a href="" class="contact"><button>Contact &#127939;</button></a>
     </div>
+
+    <!-- Tulisan -->
     <div class="container">
         <div class="row">
             <div class="col-2">
@@ -33,6 +39,28 @@
             </div>
         </div>
     </div>
+
+    <!-- Iklan  -->
+    <div class="iklan">
+        <div class="cell"><a href="https://www.youtube.com/"><img src="molen.jpg" alt=""></a></div>
+        <div class="cell"><img src="Pripayer.png" alt=""></div>
+        <div class="cell"><img src="pubg.jpg" alt=""></div>
+        <div class="cell"><a href="https://playvalorant.com/id-id/"><img src="valorant.jpg" alt=""></a></div>
+    </div>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script>
+        $('.iklan').flickity({
+            // options
+            // cellAlign: 'left',
+            wrapAround: true,
+            autoPlay: true
+            // freeScroll: false
+        });
+    </script>
+
+    <!-- Gamelist -->
     <div class="gameList">
         <h1 style="text-align:center;" >Game List</h1>
         <div class="gameContainer">

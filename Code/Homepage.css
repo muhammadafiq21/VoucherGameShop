@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
+/* warna back-up
+  #00caca : biru 
+  #280031 : ungu tua
+  #24252a : biru tua banget
+  #e9edff : putih kebiruan dikit
+  rgb(17, 30, 61) : box shadow warna biru tua banget 
+ */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,8 +15,8 @@
 }
 body {
   height: 200vh;
-  background: radial-gradient(#00caca, #280031);
-  /* background: #280031; */
+  /* background: radial-gradient(#6db270, #1a1b1d); */
+  background: #1a1b1d;
 }
 .logo {
   display: flex;
@@ -16,23 +24,23 @@ body {
   color: #24252a;
 }
 
-.logo:hover {
-  color: #00caca;
+/* .logo:hover {
+  color: #6db270;
   transition: all 0.3s ease 0s;
-  cursor: pointer;
-  /* text-shadow: 0px 2px 2px rgb(17, 30, 61); */
-}
+  cursor: pointer; */
+/* text-shadow: 0px 2px 2px rgb(17, 30, 61); */
+/* } */
 
-h4 {
+/* h4 {
   padding-left: 1rem;
   font-size: 17px;
-}
+} */
 
 p {
-  color: rgb(17, 30, 61);
+  color: #e2e3e3;
 }
 button {
-  color: #ffffff;
+  color: #e2e3e3;
 }
 
 p,
@@ -43,15 +51,29 @@ button {
   text-decoration: none;
 }
 
+/*================= Navbar================== */
 .navbar {
   display: flex;
   font-family: "Montserrat", sans-serif;
   justify-content: space-between;
   align-items: center;
-  padding: 2px 3%;
+  padding: 7px 3%;
   /* border-radius: 10px; */
   /* background: #24252a; */
-  background: #e9edff;
+  background: #323232;
+}
+
+.logo {
+  padding-bottom: 2px;
+  transition: all 0.3s ease 0s;
+}
+
+.logo:hover {
+  border-bottom: 3px solid #6db270;
+}
+
+.logo img {
+  width: 150px;
 }
 
 p,
@@ -74,7 +96,8 @@ p,
 }
 
 .bacaan p:hover {
-  color: #00caca;
+  color: #6db270;
+  /* border-bottom: 2px solid #6db270; */
   /* text-shadow: 0px 2px 2px rgb(17, 30, 61); */
 }
 
@@ -82,6 +105,35 @@ p,
   padding: 7px 20px;
   border-radius: 50px;
 }
+/* ================================================== */
+
+/* ================== Iklan ========================= */
+
+/* .flickity-slider {
+  animation: 10s slider infinite;
+} */
+
+.cell {
+  width: auto; /*sebenernya ini default tapi gapapa ditulis ae*/
+  height: 450px;
+  margin: 20px 20px !important;
+  /* overflow: hidden; */
+}
+
+.cell img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.dot {
+  outline: 4px solid #6db270;
+  /* color: #6db270; */
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+
 .tombolBeli {
   padding: 1em;
   border-radius: 20px;
@@ -90,16 +142,18 @@ p,
 }
 .contact button,
 .tombolBeli {
-  background-color: rgb(17, 30, 61);
+  background-color: #6db270;
   border: none;
   cursor: pointer;
+  color: white;
   transition: all 0.3s ease 0s;
 }
 
 .contact button:hover,
 .tombolBeli:hover {
-  background-color: #00caca;
-  box-shadow: 0px 5px 5px rgb(17, 30, 61);
+  background-color: #8ceb8f;
+  color: black;
+  box-shadow: 0px 5px 5px rgb(255, 255, 255);
 }
 
 .container,
@@ -113,7 +167,7 @@ p,
 
 .gameList h1 {
   color: #ffffff;
-  text-shadow: 0px 4px 5px #00caca;
+  text-shadow: 0px 4px 5px #6db270;
   margin-bottom: 20px;
   /* text-decoration: underline; */
 }
@@ -129,11 +183,11 @@ p,
 }
 
 .gameList .card {
-  background-color: #e9edff;
+  background-color: #323232;
   border-radius: 10px;
   padding: 1em;
-  box-shadow: 0px 10px 5px rgb(17, 30, 61);
-  color: black;
+  box-shadow: 0px 10px 5px #6db270;
+  color: white;
   text-align: center;
   /* max-width: 85%; */
 }
@@ -145,6 +199,7 @@ p,
 
 .card img {
   max-width: 95%;
+  width: 100%;
   margin: 5px;
   border-radius: 5px;
 }
