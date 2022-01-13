@@ -1,5 +1,5 @@
 body {
-  background: #f2f2f2;
+  background: #1a1b1d;
 }
 
 .payment {
@@ -42,16 +42,11 @@ body {
   color: #fff;
   border-radius: 70px;
   padding: 8px 15px;
-  background: rgb(0, 224, 101);
+  background: #6db270;
   transition: all ease-in-out 0.3s;
 }
 
 .content a:hover {
   text-decoration: none;
   background: rgb(0, 0, 0);
-}
-
-.dark-mode {
-  background-color: black;
-  color: white;
 }
