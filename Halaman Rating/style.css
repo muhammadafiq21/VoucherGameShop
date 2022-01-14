@@ -34,7 +34,7 @@ body {
 
 .container .text {
     font-size: 25px;
-    color: #666;
+    color: #fff;
     font-weight: 500;
 }
 
@@ -95,7 +95,7 @@ input#rate-5:checked~label {
 }
 
 #rate-5:checked~form header:before {
-    content: "Sangat Bagus ";
+    content: "Sangat Ramah, Bintang 5 ";
 }
 
 .container form {
@@ -109,7 +109,7 @@ input:checked~form {
 form header {
     width: 100%;
     font-size: 25px;
-    color: rgb(15, 117, 78);
+    color: #999;
     font-weight: 500;
     margin: 5px 0 20px 0;
     text-align: center;
