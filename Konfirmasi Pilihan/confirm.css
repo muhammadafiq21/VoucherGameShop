@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 200vh;
+  /* background: radial-gradient(#6db270, #1a1b1d); */
+  background: #1a1b1d;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  color: #24252a;
+}
+p {
+  color: #e2e3e3;
+}
+button {
+  color: #e2e3e3;
+}
+p,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/*================= Navbar ================== */
+.navbar {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 3%;
+  /* border-radius: 10px; */
+  /* background: #24252a; */
+  background: #323232;
+}
+.logo {
+  padding-bottom: 2px;
+  transition: all 0.3s ease 0s;
+}
+.logo:hover {
+  border-bottom: 3px solid #6db270;
+}
+.logo img {
+  width: 150px;
+}
+p,.gamepad {
+  cursor: pointer;
+}
+.bacaan {
+  list-style: none;
+}
+.bacaan p {
+  transition: all 0.3s ease 0s;
+  font-weight: bold;
+}
+.bacaan p:hover {
+  color: #6db270;
+}
+.contact button {
+  padding: 7px 20px;
+  border-radius: 50px;
+  background-color: #6DB270;
+}
+
+/*================= Isi ================== */
+.grid-container {
+  margin-top: 50px;
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto 40% auto;
+  padding: 10px;
+}
+.grid-item {
+  height: 75vh;
+  border-radius: 20px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 0px;
+  font-size: 30px;
+  text-align: center;
+}
+#ex{
+  opacity: 0;
+}
