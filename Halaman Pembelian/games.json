@@ -4,6 +4,7 @@
             "nama":"Valorant",
             "deskripsi":"Game FPS terbaik minggu ini, halo player 1 sudah siap menggosok dinding ascent ?. Jangan Buat Papa Brim sedih dengan skin kamu yang Standart, Ayo beli valorant point di TokoTokoTok.com",
             "voucher":[400, 800, 1000, 1100, 1500, 2000],
+            "harga":[30000, 75000, 120000, 135000, 180000, 210000],
             "eyemoney":"Valorant Point", 
             "gambar":"valorant.png"
         },
@@ -11,7 +12,8 @@
         {
             "nama":"Free Fire",
             "deskripsi":"Majulah bersama DJ Alok, Cristiano Ronaldo, Dan Eren Yeger dalam 100 Player Battle Royale, Beli Diamond di TokoTokoTok.com untuk harga voucher yang lebih murah.",
-            "voucher":[100, 200, 300, 400, 500, 600, 700, 800],
+            "voucher":[140, 355, 720, 1450, 2180, 3640, 7290],
+            "harga":[20000, 35000, 100000, 200000, 300000, 500000, 1000000],
             "eyemoney": "Diamonds",
             "gambar": "freefire.png"
         }

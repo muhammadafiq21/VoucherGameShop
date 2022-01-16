@@ -38,7 +38,7 @@ function showingGame(blind){
         for(let q=0; q < moneyIngame.length; q++){
             voc.innerHTML += `<div class="card-voc">
                                 <label>
-                                    <input class="opsi" type="radio" name="opsi">
+                                    <input class="opsi" type="radio" name="opsi" onclick = "showingPrice(${q}, ${head})">
                                     <span class="opsi-sider"> <span>${moneyIngame[q]}</span> <span>${queue[head].eyemoney}</span> </span>
                                 </label>
                             </div>`;
@@ -46,4 +46,33 @@ function showingGame(blind){
 
         
     })
+}
+
+function showingPrice(priceIndex, gameIndex){
+    fetch('./games.json')
+    .then((respone)=> respone.json())
+    .then((games) => {
+        let queue = games.packGame;
+        let price_tag_gopay = document.getElementById("harga-game-gopay");
+        let price_tag_ovo = document.getElementById("harga-game-ovo");
+        let price_tag_dana = document.getElementById("harga-game-dana");
+
+        let price_array = queue[gameIndex].harga;
+        console.log(gameIndex);
+        console.log(price_array);
+
+        //lempar ke html
+        price_tag_gopay.innerHTML = "";
+        price_tag_gopay.innerHTML += numberComa(price_array[priceIndex]);
+
+        price_tag_ovo.innerHTML = "";
+        price_tag_ovo.innerHTML += numberComa(price_array[priceIndex]);
+
+        price_tag_dana.innerHTML = "";
+        price_tag_dana.innerHTML += numberComa(price_array[priceIndex]);
+    })
+}
+
+function numberComa(slay){
+   return slay.toLocaleString();
 }
