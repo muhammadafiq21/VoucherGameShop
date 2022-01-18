@@ -25,17 +25,17 @@
     <div class="grid-container">
         <div class="grid-item" id="ex"></div>
         <div class="grid-item">
-            <h3 style="background-color: #6DB270; border-radius: 20px 20px 0px 0px; padding: 20px; font-family: Montserrat, sans-serif;">Detail Pemesanan</h3><br>
+            <h3>Detail Pemesanan</h3><br>
             <div style="padding: 25px;">
-                <p style="text-align: left; font-size: 18px; cursor:auto; color:black;">Mohon konfirmasi ID dan pilihan anda sudah benar.<br><br><br>
+                <p id="x">Mohon konfirmasi ID dan pilihan anda sudah benar.<br><br><br>
                     ID :&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;********<br><br>
                     Harga :&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;********<br><br>
                     Bayar dengan :&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;********<br><br>
                     Total Pembayaran :&emsp;&emsp;&emsp;&emsp;&emsp;********
                 </p>
                 <div style="text-align:right; margin-top: 15vh;">
-                    <button style="color: black; margin-right:10px">Batalkan</button>
-                    <button style="color: black;">Konfirm</button>
+                <input type="button" class="input" value="Batalkan">
+                <input type="button" class="input" value="Konfirm">
                 </div>            
             </div>
         </div>
