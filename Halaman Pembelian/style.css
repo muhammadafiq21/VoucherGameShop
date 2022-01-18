@@ -57,6 +57,16 @@ nav > a {
   background-color: none;
 }
 
+.banner-game {
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+.game-gambar-banner {
+  border-radius: 10px;
+  max-width: 500px;
+}
+
 /* Kanan */
 
 .detail-pembayaran {

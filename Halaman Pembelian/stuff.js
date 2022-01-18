@@ -13,6 +13,7 @@ function showingGame(blind){
         let moneyIngame;
         let head;
         let voc = document.getElementById('voucher-game');
+        let banner = document.getElementById('banner-blue');
 
         // Searching Game
         for(let i=0; i < queue.length; i++){
@@ -44,7 +45,9 @@ function showingGame(blind){
                             </div>`;
         }
 
-        
+        // ganti banner
+        banner.innerHTML = "";
+        banner.innerHTML += `<img src="assets/banner/${queue[head].gambar}" class="game-gambar-banner">`;
     })
 }
 

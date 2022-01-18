@@ -6,7 +6,7 @@
             "voucher":[400, 800, 1000, 1100, 1500, 2000],
             "harga":[30000, 75000, 120000, 135000, 180000, 210000],
             "eyemoney":"Valorant Point", 
-            "gambar":"valorant.png"
+            "gambar":"Valorant.png"
         },
 
         {
@@ -15,7 +15,43 @@
             "voucher":[140, 355, 720, 1450, 2180, 3640, 7290],
             "harga":[20000, 35000, 100000, 200000, 300000, 500000, 1000000],
             "eyemoney": "Diamonds",
-            "gambar": "freefire.png"
+            "gambar": "Free Fire.png"
+        },
+
+        {
+            "nama":"Mobile Legends",
+            "deskripsi":"Top Up Mobile Legends di TokoTokoTok.com dapatkan bonusnya dengan, majulah hancurkan tower jadiah pemenang dan jadilah kolektor skin dengan Top Up diamond di TokoTokoTok",
+            "voucher":[154, 217, 256, 367, 503, 774, 1708, 4003],
+            "harga":[50000, 72000, 88000, 122000, 165000, 254000, 550000, 1320000],
+            "eyemoney": "Diamonds",
+            "gambar": "Mobile Legend.png"
+        },
+
+        {
+            "nama":"Genshin Impact",
+            "deskripsi":"Top Up Genesis Crystal di TokoTokoTok, mari berpetualang  dan kalahkan monster monster, lelah grinding? Top Up Yuk di TokoTokoTok dapatkan bonus dengan top up yang lebih.",
+            "voucher":[300, 980, 1980, 3580, 7080],
+            "harga":[80000, 255000, 480000, 800000, 1600000],
+            "eyemoney": "Genesis Crystals",
+            "gambar": "Genshin Impact.png"
+        },
+
+        {
+            "nama":"COD Mobile",
+            "deskripsi":"Bantai musuh musuh di Luxville dan Burning Hall, rasakan aroma shotgun yang indah dipadukan dengan skin epic memunculkan effect satifying saat membunuh musuh, Ayo top up di TokoTokoTok jadilah yang unik dari yang lain.",
+            "voucher":[31, 62, 127, 317, 634, 1373, 2059],
+            "harga":[5000, 10000, 20000, 50000, 300000, 500000, 1000000],
+            "eyemoney": "CP",
+            "gambar": "COD Mobile.png"
+        },
+
+        {
+            "nama":"PUBG Mobile",
+            "deskripsi":"Angka senapanmu jalankan mobilmu mari bertempur bersamaku bunuh musuh dengan sniper, awas zona yang mengecil. Top Up di TokoTokoTok dan jadilah player dengan skin yang epik dan ber-effect mahal.",
+            "voucher":[50, 73, 132, 250, 500, 1250, 2500],
+            "harga":[10000, 14000, 25000, 50000, 100000, 250000, 500000],
+            "eyemoney": "UC",
+            "gambar": "PUBG Mobile.png"
         }
     ]
 }
