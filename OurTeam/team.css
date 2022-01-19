@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 3%;
+  /* border-radius: 10px; */
+  /* background: #24252a; */
+  background: #323232;
+}
+
+.logo {
+  padding-bottom: 2px;
+  transition: all 0.3s ease 0s;
+}
+
+.logo:hover {
+  border-bottom: 3px solid #6db270;
+}
+
+.logo img {
+  width: 150px;
+}
+
+p,
+.gamepad {
+  cursor: pointer;
+}
+
+p,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: #e2e3e3;
+}
+
+.bacaan {
+  list-style: none;
+}
+
+.bacaan p {
+  transition: all 0.3s ease 0s;
+  font-weight: bold;
+}
+
+.bacaan p:hover {
+  color: #6db270;
+}
+
+.contact button {
+  padding: 7px 20px;
+  border-radius: 50px;
+  background-color: #6db270;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+
+.contact button:hover {
+  background-color: #8ceb8f;
+  color: black;
+  box-shadow: 0px 5px 5px rgb(255, 255, 255);
+}
+
+/* =============================================== */
+
+body {
+  background-color: #1a1b1d;
+}
+
+.team-section {
+  height: 94vh;
+  display: flex;
+}
+
+.person {
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: 0.6s;
+}
+
+.person:hover {
+  flex: 2;
+}
+
+.person-pic {
+  position: absolute;
+  height: 100%;
+  width: 680px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: grayscale(80%);
+  transition: 0.3s;
+}
+
+.person:hover .person-pic {
+  filter: grayscale(0);
+}
+
+.person-info {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.person:hover .person-info {
+  opacity: 1;
+  bottom: 60px;
+  transition-delay: 0.6s;
+}
+
+.person-info h2 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(26, 27, 29, 1);
+  margin-bottom: 10px;
+  transition: 0.3s linear;
+}
+.person-info h2:hover {
+  transform: scale(1.2);
+}
+.socialmedia a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #333;
+  background-color: #6db270;
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 0 6px;
+  font-size: 18px;
+  transition: 0.3s linear;
+}
+
+.socialmedia a:hover {
+  color: #8ceb8f;
+  background-color: black;
+  transform: scale(1.5);
+}

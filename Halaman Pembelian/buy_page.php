@@ -15,20 +15,18 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="head-up">
-            <div class="left-corner">
-                <img class="corner-logo" src="assets/Logo/TokoTokoTok Logo-wide.png">
-                <!--<h2>Bapakku.com</h2> -->
-            </div>
-
-            <nav>
-                <a href="../Code/Homepage.html"> Home </a>
-                <!-- <a href="#"> Kontak Kami </a> 
-                <a href="#"> Mulai Belanja </a> -->
-
-            </nav>
+    <div class="navbar">
+        <div class="logo">
+            <a href="..\Code\Homepage.html"><img src="..\Code\Logo\TokoTokoTok Logo-wide.png" class="gamepad" alt="logo" width="105px"></a>
         </div>
+        <div class="bacaan">
+            <p>
+                <font size="4">SUDAH SIAP MENGHABISKAN DOMPET MAMAH?</font>
+            </p>
+        </div>
+        <a href="../OurTeam/contact.html" class="contact"><button>Contact &#127939;</button></a>
+    </div>
+    <div class="container">
 
         <div class="monitor">
             <div class="information-game">

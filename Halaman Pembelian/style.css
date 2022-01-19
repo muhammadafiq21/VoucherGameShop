@@ -3,6 +3,82 @@ html {
   color: antiquewhite;
 }
 
+/* NAVBAR */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 3%;
+  /* border-radius: 10px; */
+  /* background: #24252a; */
+  background: #323232;
+}
+
+.logo {
+  padding-bottom: 2px;
+  transition: all 0.3s ease 0s;
+}
+
+.logo:hover {
+  border-bottom: 3px solid #6db270;
+}
+
+.logo img {
+  width: 150px;
+}
+
+p,
+.gamepad {
+  cursor: pointer;
+}
+
+p,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: #e2e3e3;
+}
+
+.bacaan {
+  list-style: none;
+}
+
+.bacaan p {
+  transition: all 0.3s ease 0s;
+  font-weight: bold;
+}
+
+.bacaan p:hover {
+  color: #6db270;
+}
+
+.contact button {
+  padding: 7px 20px;
+  border-radius: 50px;
+  background-color: #6db270;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+
+.contact button:hover {
+  background-color: #8ceb8f;
+  color: black;
+  box-shadow: 0px 5px 5px rgb(255, 255, 255);
+}
+
+/* =============================================== */
+
 .container {
   padding: 20px;
   font-family: "PT Sans", sans-serif;
