@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,22 @@
     <title>Konfirmasi Pembayaran</title>
     <link rel="stylesheet" href="/hehe/VoucherGameShop/Code/Homepage.css">
     <link rel="stylesheet" href="confirm.css">
-    
+
 </head>
+<?php
+
+error_reporting(0);
+
+$id =  $_POST["id-game"];
+$voucher =  $_POST["opsi-voucher"];
+$email = $_POST["email"];
+$pembayaran = $_POST["payment"];
+$harga = $_POST["opsi-bayar"];
+$Game = $_POST["namaGame"];
+$eyemoney = eyemoney($Game);
+
+
+?>
 
 <body>
     <!-- Navbar -->
@@ -17,7 +32,9 @@
             <img src="TokoTokoTok Logo-wide.png" class="gamepad" alt="logo" width="105px">
         </div>
         <div class="bacaan">
-            <p><font size="4">SUDAH SIAP MENGHABISKAN DOMPET MAMAH?</font></p>
+            <p>
+                <font size="4">SUDAH SIAP MENGHABISKAN DOMPET MAMAH?</font>
+            </p>
         </div>
         <a href="" class="contact"><button>Contact &#127939;</button></a>
     </div>
@@ -28,18 +45,44 @@
             <h3>Detail Pemesanan</h3><br>
             <div style="padding: 25px;">
                 <p id="x">Mohon konfirmasi ID dan pilihan anda sudah benar.<br><br><br>
-                    ID :&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;********<br><br>
-                    Harga :&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;********<br><br>
-                    Bayar dengan :&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;********<br><br>
-                    Total Pembayaran :&emsp;&emsp;&emsp;&emsp;&emsp;********
+                    ID :&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<?php echo $id ?><br><br>
+                    Voucher :&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<?php echo $voucher;
+                                                                                            echo $eyemoney;
+                                                                                            echo " "; ?><br><br>
+                    Game :&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<?php echo $Game; ?><br><br>
+                    Bayar dengan :&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<?php echo $pembayaran; ?><br><br>
+                    Total Pembayaran :&emsp;&emsp;&emsp;&emsp;&emsp; <?php echo "Rp."; ?><?php echo number_format($harga); ?>
                 </p>
                 <div style="text-align:right; margin-top: 15vh;">
-                <input type="button" class="input" value="Batalkan">
-                <input type="button" class="input" value="Konfirm">
-                </div>            
+                    <input type="button" class="input" value="Batalkan">
+                    <a href="../Confirm Payment/index.html">
+                        <input type="button" class="input" value="Konfirm">
+
+                    </a>
+                </div>
             </div>
         </div>
         <div class="grid-item" id="ex"></div>
-    </div>    
+    </div>
 </body>
+
 </html>
+<?php
+
+function eyemoney($media)
+{
+    if ($media == "Valorant") {
+        return "Valorant Point";
+    } else if ($media == "Free Fire" or $media == "Mobile Legends") {
+        return "Diamonds";
+    } else if ($media == "Genshin Impact") {
+        return "Genesis Crystals";
+    } else if ($media == "COD Mobile") {
+        return "CP";
+    } else if ($media == "PUBG Mobile") {
+        return "UC";
+    }
+}
+
+
+?>
