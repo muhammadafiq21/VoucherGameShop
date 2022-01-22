@@ -24,7 +24,7 @@
                 <font size="4">SUDAH SIAP MENGHABISKAN DOMPET MAMAH?</font>
             </p>
         </div>
-        <a href="../OurTeam/contact.html" class="contact"><button>Contact &#127939;</button></a>
+        <a href="../Code/Homepage.html" class="contact"><button>Home &#127939;</button></a>
     </div>
     <div class="container">
 
@@ -50,7 +50,7 @@
                 $voucher =  $_POST["opsi-voucher"];
                 $email = $_POST["email"];
                 $Game = $_POST["nameGame"];
-                $Payment = $_POST["payment"];
+                $Opsi_Bayar = $_POST["opsi-bayar"];
             }
 
             ?>
@@ -89,13 +89,46 @@
 
                             <div class="card-buy" id="bayar1">
                                 <label>
-                                    <input class="opsi" type="radio" name="opsi-bayar-gopay" value="GOPAY">
+                                    <input class="opsi" type="radio" name="opsi-bayar" value="GOPAY">
                                     <span class="opsi-sider">
                                         <img src="assets/stone-free/Frame 1.svg" class="mechant">
-                                        <div> <span>Harga</span> <span>Rp. </span> <span id="harga-game-gopay"></span> </div>
+                                        <div class="mordo">
+                                            <div>
+                                                <h2 style="margin-top:25px;">Pilih Voucher Terlebih Dahulu</h2>
+                                            </div>
+                                        </div>
                                     </span>
                                 </label>
                             </div>
+
+                            <div class="card-buy" id="bayar2">
+                                <label>
+                                    <input class="opsi" type="radio" name="opsi-bayar" value="GOPAY">
+                                    <span class="opsi-sider">
+                                        <img src="assets/stone-free/Frame 2.svg" class="mechant">
+                                        <div class="mordo">
+                                            <div>
+                                                <h2 style="margin-top:25px;">Pilih Voucher Terlebih Dahulu</h2>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="card-buy" id="bayar3">
+                                <label>
+                                    <input class="opsi" type="radio" name="opsi-bayar" value="GOPAY">
+                                    <span class="opsi-sider">
+                                        <img src="assets/stone-free/Frame 3.svg" class="mechant">
+                                        <div class="mordo">
+                                            <div>
+                                                <h2 style="margin-top:25px;">Pilih Voucher Terlebih Dahulu</h2>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </label>
+                            </div>
+
                         </div>
                     </div>
                     <!--Email-->

@@ -1,9 +1,10 @@
 var send = localStorage.getItem("myValue");
 console.log(send);
 showingGame(send);
+/*
 var resetValue="";
 localStorage.setItem("myValue", resetValue);
-
+*/
 function showingGame(blind){
     fetch('./games.json')
     .then((respone)=> respone.json())
@@ -59,17 +60,21 @@ function showingPrice(priceIndex, gameIndex){
     .then((respone)=> respone.json())
     .then((games) => {
         let queue = games.packGame;
-        let bayaran = document.getElementById("beli-voc-qq")
+        //let bayaran = document.getElementById("beli-voc-qq")
 
         let price_array = queue[gameIndex].harga;
         console.log(gameIndex);
         console.log(price_array);
 
+        let price_tag_gopay = document.getElementById("bayar1");
+        let price_tag_ovo = document.getElementById("bayar2");
+        let price_tag_dana = document.getElementById("bayar3");
+
         //lempar ke html
-        /*
+        
         price_tag_gopay.innerHTML = "";
         price_tag_gopay.innerHTML += `<label>
-                                        <input class="opsi" type="radio" name="opsi-bayar" value="${price_array[priceIndex]}">
+                                        <input class="opsi" type="radio"  name="opsi-bayar" value="${price_array[priceIndex]} GOPAY">
                                             <span class="opsi-sider">
                                                 <img src="assets/stone-free/Frame 1.svg" class="mechant">
                                                 <div> <span>Harga</span> <span>Rp. </span> <span id="harga-game-gopay">${numberComa(price_array[priceIndex])} </span> </div>
@@ -78,7 +83,7 @@ function showingPrice(priceIndex, gameIndex){
 
         price_tag_ovo.innerHTML = "";
         price_tag_ovo.innerHTML += `<label>
-                                        <input class="opsi" type="radio" name="opsi-bayar" value="${price_array[priceIndex]}">
+                                        <input class="opsi" type="radio" name="opsi-bayar" value="${price_array[priceIndex]} OVO">
                                         <span class="opsi-sider">
                                             <img src="assets/stone-free/Frame 2.svg" class="mechant">
                                             <div> <span>Harga</span> <span>Rp. </span> <span id="harga-game-ovo">${numberComa(price_array[priceIndex])} </span> </div>
@@ -87,24 +92,25 @@ function showingPrice(priceIndex, gameIndex){
 
         price_tag_dana.innerHTML = "";
         price_tag_dana.innerHTML += `<label>
-                                        <input class="opsi" type="radio" name="opsi-bayar" value="${price_array[priceIndex]}">
+                                        <input class="opsi" type="radio" name="opsi-bayar" value="${price_array[priceIndex]} DANA">
                                         <span class="opsi-sider">
                                             <img src="assets/stone-free/Frame 3.svg" class="mechant">
                                             <div> <span>Harga</span> <span>Rp. </span> <span id="harga-game-dana">${numberComa(price_array[priceIndex])} </span> </div>
                                         </span>
                                     </label>`; 
-        */
+        
 
-
+        
         // looping bayaran
+        /*
         let gambar=1;
-        let merchant = ["GOPAY", "OVO", "DANA"];
+        let merchant = ["GOPAY", "OVO", "Meteor"];
         bayaran.innerHTML ="";
         for(let x=0; x < 3; x++){
-            bayaran.innerHTML += `<div class="card-buy" id="bayar1">
+            bayaran.innerHTML += `<div class="card-buy" id="bayar">
                                 <label>
                                     <input class="opsi" type="radio" name="opsi-bayar" value="${price_array[priceIndex]}">
-                                    <input type="hidden" name="payment" value="${merchant[x]}"> 
+                                    <input class="opsi" type="hidden" name="dompet" value="${merchant[x]}"> 
                                     <span class="opsi-sider">
                                         <img src="assets/stone-free/Frame ${gambar}.svg" class="mechant">
                                         <div> <span>Harga</span> <span>Rp. </span> <span id="harga-game-gopay">${numberComa(price_array[priceIndex])}</span> </div>
@@ -113,7 +119,7 @@ function showingPrice(priceIndex, gameIndex){
                             </div>`;
             gambar++;
         }
-        
+        */
     })
 }
 
