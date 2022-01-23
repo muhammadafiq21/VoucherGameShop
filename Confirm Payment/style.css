@@ -1,10 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  justify-content: space-between;
+  padding: 7px 3%;
+  align-items: center;
+  /* border-radius: 10px; */
+  /* background: #24252a; */
+  background: #323232;
+}
+
+.logo {
+  padding-bottom: 2px;
+  transition: all 0.3s ease 0s;
+}
+
+.logo:hover {
+  border-bottom: 3px solid #6db270;
+}
+
+.logo img {
+  width: 150px;
+}
+
+p {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+p,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.bacaan {
+  list-style: none;
+}
+
+.bacaan p {
+  color: #e2e3e3;
+  transition: all 0.3s ease 0s;
+  font-weight: bold;
+}
+
+.bacaan p:hover {
+  color: #6db270;
+}
+
+.contact button {
+  padding: 7px 20px;
+  border-radius: 50px;
+  background-color: #6db270;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+
+.contact button:hover {
+  background-color: #8ceb8f;
+  color: black;
+  box-shadow: 0px 5px 5px rgb(255, 255, 255);
+}
+
 body {
+  font-family: "Montserrat", sans-serif;
   background: #1a1b1d;
 }
 
 .payment {
-  border: 1px solid #f2f2f2;
-  height: 280px;
+  border: none;
+  height: 250px;
   border-radius: 20px;
   background: #fff;
 }
@@ -35,12 +111,16 @@ body {
 
 .content h1 {
   font-size: 25px;
-  padding-top: 25px;
+  padding-top: 10px;
+}
+.content p {
+  margin-bottom: 20px;
 }
 
 .content a {
   color: #fff;
   border-radius: 70px;
+  /* margin-top: 50px; */
   padding: 8px 15px;
   background: #6db270;
   transition: all ease-in-out 0.3s;
@@ -48,13 +128,9 @@ body {
 
 .content a:hover {
   text-decoration: none;
-  background: rgb(0, 0, 0);
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #8ceb8f;
+  color: black;
+  box-shadow: 0px 5px 5px rgb(0, 0, 0);
 }
 
 .riview a {
@@ -63,7 +139,15 @@ img {
   padding: 8px 15px;
   background: #6db270;
   transition: all ease-in-out 0.3s;
+  text-decoration: none;
 }
+
+.riview a:hover {
+  background-color: #8ceb8f;
+  color: black;
+  box-shadow: 0px 5px 5px rgb(255, 255, 255);
+}
+
 .riview {
   text-align: center;
 }

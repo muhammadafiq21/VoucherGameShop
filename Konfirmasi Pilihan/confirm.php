@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/hehe/VoucherGameShop/Code/Homepage.css">
     <link rel="stylesheet" href="confirm.css">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    
+
 
 </head>
 <?php
@@ -67,7 +67,7 @@ if (isset($_POST["terima"])) {
                 ?>
             </p>
         </div>
-        <a href="" class="contact"><button>Contact &#127939;</button></a>
+        <a href="../Code/Homepage.html" class="contact"><button>Home &#127939;</button></a>
     </div>
 
     <div class="grid-container">
@@ -112,17 +112,16 @@ if (isset($_POST["terima"])) {
 </body>
 <script>
     const btn = document.getElementById('btn');
-    btn.addEventListener('click', function(){
+    btn.addEventListener('click', function() {
         Swal.fire({
             title: 'Scan Disini!',
-            text : 'Untuk menyelesaikan pembayaran.',
+            text: 'Untuk menyelesaikan pembayaran.',
             imageUrl: 'https://i.postimg.cc/bJYf599G/qrcode.png',
             imageAlt: 'Custom image',
-        }).then(function(){
+        }).then(function() {
             window.location = "../Confirm Payment/index.html";
         })
     });
-   
 </script>
 
 

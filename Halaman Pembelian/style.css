@@ -36,8 +36,7 @@ html {
   width: 150px;
 }
 
-p,
-.gamepad {
+p {
   cursor: pointer;
 }
 
