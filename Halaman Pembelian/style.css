@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
 html {
   background-color: #1a1b1d;
   color: antiquewhite;
@@ -81,7 +83,7 @@ button {
 
 .container {
   padding: 20px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .corner-logo {
@@ -163,7 +165,7 @@ nav > a {
 }
 
 .detail-id > h2 {
-  margin: 20px 0px 10px 10px;
+  margin: 20px 0px 10px 15px;
 }
 
 .detail-id > input {
@@ -179,6 +181,7 @@ nav > a {
 .detail-id > p {
   font-size: 10px;
   margin: 5px;
+  margin-left: 10px;
 }
 
 /* Start Detail Variant */
@@ -378,9 +381,7 @@ nav > a {
   color: #ffffff;
   cursor: pointer;
   flex: 0 0 auto;
-  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.5rem;
@@ -398,7 +399,9 @@ nav > a {
 }
 
 .btn-detail:hover {
-  background-color: #374151;
+  background-color: #8ceb8f;
+  color: black;
+  box-shadow: 0px 5px 5px rgb(255, 255, 255);
 }
 
 .btn-detail:focus {

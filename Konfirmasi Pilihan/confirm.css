@@ -50,7 +50,8 @@ button {
 .logo img {
   width: 150px;
 }
-p,.gamepad {
+p,
+.gamepad {
   cursor: pointer;
 }
 .bacaan {
@@ -66,7 +67,14 @@ p,.gamepad {
 .contact button {
   padding: 7px 20px;
   border-radius: 50px;
-  background-color: #6DB270;
+  background-color: #6db270;
+  border: none;
+}
+.contact button:hover {
+  background-color: #8ceb8f;
+  color: black;
+  box-shadow: 0px 5px 5px rgb(255, 255, 255);
+  transition: all 0.3s ease 0s;
 }
 
 /*================= Isi ================== */
@@ -86,11 +94,11 @@ p,.gamepad {
   font-size: 30px;
   text-align: center;
 }
-#ex{
+#ex {
   opacity: 0;
 }
-.input{
-  background-color: #4CAF50; /* Green */
+.input {
+  background-color: #4caf50; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -98,23 +106,23 @@ p,.gamepad {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  border-radius:25px;
-  cursor:pointer;
+  border-radius: 25px;
+  cursor: pointer;
   font-weight: bold;
 }
-.input:active{
+.input:active {
   background-color: #3e8e41;
   transform: translateY(1px);
 }
-h3{
-  background-color: #6DB270; 
-  border-radius: 20px 20px 0px 0px; 
-  padding: 20px; 
+h3 {
+  background-color: #6db270;
+  border-radius: 20px 20px 0px 0px;
+  padding: 20px;
   font-family: Montserrat, sans-serif;
 }
-#x{
-  text-align: left; 
-  font-size: 18px; 
-  cursor:auto; 
-  color:black
+#x {
+  text-align: left;
+  font-size: 18px;
+  cursor: auto;
+  color: black;
 }

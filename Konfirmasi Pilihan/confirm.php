@@ -65,7 +65,7 @@ if (isset($_POST["terima"])) {
                 ?>
             </p>
         </div>
-        <a href="" class="contact"><button>Contact &#127939;</button></a>
+        <a href="../Code/Homepage.html" class="contact"><button>Home &#127939;</button></a>
     </div>
 
     <div class="grid-container">
