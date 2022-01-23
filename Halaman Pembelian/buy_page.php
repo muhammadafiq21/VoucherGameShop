@@ -45,6 +45,7 @@
 
             <!--Input ID Game-->
             <?php
+
             if (isset($_POST['submit'])) {
                 $id =  $_POST["id-game"];
                 $voucher =  $_POST["opsi-voucher"];
@@ -52,6 +53,28 @@
                 $Game = $_POST["nameGame"];
                 $Opsi_Bayar = $_POST["opsi-bayar"];
             }
+
+            /*
+            require 'koneksi.php';
+
+            if (isset($_POST['submit'])) {
+
+                if (input_data($_POST) > 0) {
+                    echo "<script>
+            alert('Registrasi Berhasil !');
+            document.location.href = 'buy_page.php';
+            </script>
+            ";
+                } else {
+                    echo "<script>
+            alert('Registrasi Gagal !');
+            document.location.href = 'buy_page.php';
+            </script>
+            ";
+                }
+            }
+            */
+
 
             ?>
 
