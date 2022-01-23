@@ -8,6 +8,8 @@
     <title>Konfirmasi Pembayaran</title>
     <link rel="stylesheet" href="/hehe/VoucherGameShop/Code/Homepage.css">
     <link rel="stylesheet" href="confirm.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
 
 </head>
 <?php
@@ -29,11 +31,11 @@ $eyemoney = eyemoney($Game);
 if (isset($_POST["terima"])) {
 
     if (input_data($_POST) > 0) {
-        echo "<script>
-            alert('Pembayaran Berhasil !');
+        echo "
+            <script>
             document.location.href = '../Confirm Payment/index.html';
             </script>
-            ";
+        ";
     } else {
         echo "<script>
             alert('Pembayaran Gagal !');
@@ -65,7 +67,7 @@ if (isset($_POST["terima"])) {
                 ?>
             </p>
         </div>
-        <a href="../Code/Homepage.html" class="contact"><button>Home &#127939;</button></a>
+        <a href="" class="contact"><button>Contact &#127939;</button></a>
     </div>
 
     <div class="grid-container">
@@ -96,9 +98,10 @@ if (isset($_POST["terima"])) {
                         <a href="javascript:history.back()">
                             <input type="button" class="input" value="Batalkan">
                         </a>
+                        <button type="button" class="input" name="terima" id="btn">
+                            Terima</button>
                         <a href="../Confirm Payment/index.html">
-                            <button class="input" name="terima">Terima</button>
-                            <!--<input type="button" class="input" value="Konfirm"> -->
+                            <input type="button" class="input" value="Konfirm">
                         </a>
                     </div>
                 </form>
@@ -107,6 +110,21 @@ if (isset($_POST["terima"])) {
         <div class="grid-item" id="ex"></div>
     </div>
 </body>
+<script>
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', function(){
+        Swal.fire({
+            title: 'Scan Disini!',
+            text : 'Untuk menyelesaikan pembayaran.',
+            imageUrl: 'https://i.postimg.cc/bJYf599G/qrcode.png',
+            imageAlt: 'Custom image',
+        }).then(function(){
+            window.location = "../Confirm Payment/index.html";
+        })
+    });
+   
+</script>
+
 
 </html>
 <?php
