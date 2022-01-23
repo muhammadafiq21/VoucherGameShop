@@ -98,7 +98,7 @@ if (isset($_POST["terima"])) {
                         </a>
                         <a href="../Confirm Payment/index.html">
                             <button class="input" name="terima">Terima</button>
-                            <input type="button" class="input" value="Konfirm">
+                            <!--<input type="button" class="input" value="Konfirm"> -->
                         </a>
                     </div>
                 </form>

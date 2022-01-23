@@ -43,7 +43,7 @@ function showingGame(blind){
         for(let q=0; q < moneyIngame.length; q++){
             voc.innerHTML += `<div class="card-voc">
                                 <label>
-                                    <input class="opsi" type="radio" name="opsi-voucher" value="${moneyIngame[q]}" onclick = "showingPrice(${q}, ${head})">
+                                    <input id="nVoc" class="opsi" type="radio" name="opsi-voucher" value="${moneyIngame[q]}" onclick = "showingPrice(${q}, ${head})" required>
                                     <span class="opsi-sider"> <span>${moneyIngame[q]}</span> <span>${queue[head].eyemoney}</span> </span>
                                 </label>
                             </div>`;
@@ -74,7 +74,7 @@ function showingPrice(priceIndex, gameIndex){
         
         price_tag_gopay.innerHTML = "";
         price_tag_gopay.innerHTML += `<label>
-                                        <input class="opsi" type="radio"  name="opsi-bayar" value="${price_array[priceIndex]} GOPAY">
+                                        <input id="nPay" class="opsi" type="radio"  name="opsi-bayar" value="${price_array[priceIndex]} GOPAY" required>
                                             <span class="opsi-sider">
                                                 <img src="assets/stone-free/Frame 1.svg" class="mechant">
                                                 <div> <span>Harga</span> <span>Rp. </span> <span id="harga-game-gopay">${numberComa(price_array[priceIndex])} </span> </div>
@@ -83,7 +83,7 @@ function showingPrice(priceIndex, gameIndex){
 
         price_tag_ovo.innerHTML = "";
         price_tag_ovo.innerHTML += `<label>
-                                        <input class="opsi" type="radio" name="opsi-bayar" value="${price_array[priceIndex]} OVO">
+                                        <input id="nPay" class="opsi" type="radio" name="opsi-bayar" value="${price_array[priceIndex]} OVO">
                                         <span class="opsi-sider">
                                             <img src="assets/stone-free/Frame 2.svg" class="mechant">
                                             <div> <span>Harga</span> <span>Rp. </span> <span id="harga-game-ovo">${numberComa(price_array[priceIndex])} </span> </div>
@@ -92,7 +92,7 @@ function showingPrice(priceIndex, gameIndex){
 
         price_tag_dana.innerHTML = "";
         price_tag_dana.innerHTML += `<label>
-                                        <input class="opsi" type="radio" name="opsi-bayar" value="${price_array[priceIndex]} DANA">
+                                        <input id="nPay" class="opsi" type="radio" name="opsi-bayar" value="${price_array[priceIndex]} DANA">
                                         <span class="opsi-sider">
                                             <img src="assets/stone-free/Frame 3.svg" class="mechant">
                                             <div> <span>Harga</span> <span>Rp. </span> <span id="harga-game-dana">${numberComa(price_array[priceIndex])} </span> </div>
@@ -125,4 +125,22 @@ function showingPrice(priceIndex, gameIndex){
 
 function numberComa(slay){
    return slay.toLocaleString();
+}
+
+function notNull(){
+    const nVoc = document.getElementById('nVoc');
+    const nPay = document.getElementById('nPay');
+    const nForm = document.getElementById('nForm');
+
+    nForm.addEventListener('submit', (e) => {
+        let massages = [];
+        if(nVoc.value ==='' || nVoc.value == null){
+            massages.push('Voucher yang Anda tuan');
+        }
+
+        if(massages.length > 0){
+            e.preventDefault()
+            alert(massages.join(', '))
+        }
+    })
 }

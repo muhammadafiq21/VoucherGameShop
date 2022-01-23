@@ -50,9 +50,10 @@
                 $id =  $_POST["id-game"];
                 $voucher =  $_POST["opsi-voucher"];
                 $email = $_POST["email"];
-                $Game = $_POST["nameGame"];
                 $Opsi_Bayar = $_POST["opsi-bayar"];
+                $Game = $_POST["namaGame"];
             }
+
 
             /*
             require 'koneksi.php';
@@ -78,11 +79,11 @@
 
             ?>
 
-            <form action="../Konfirmasi Pilihan/confirm.php" method="post">
+            <form id="nForm" action="../Konfirmasi Pilihan/confirm.php" method="post">
                 <div class="detail-pembayaran">
                     <div class="detail-id" id="game-game-game">
                         <h2>Id Kamu Kawan! </h2>
-                        <input type="text" name="id-game">
+                        <input type="text" name="id-game" required>
                         <p>
                             ID yang dimasukan adalah ID pada game
                         </p>
@@ -126,7 +127,7 @@
 
                             <div class="card-buy" id="bayar2">
                                 <label>
-                                    <input class="opsi" type="radio" name="opsi-bayar" value="GOPAY">
+                                    <input class="opsi" type="radio" name="opsi-bayar" value="OVVO">
                                     <span class="opsi-sider">
                                         <img src="assets/stone-free/Frame 2.svg" class="mechant">
                                         <div class="mordo">
@@ -140,7 +141,7 @@
 
                             <div class="card-buy" id="bayar3">
                                 <label>
-                                    <input class="opsi" type="radio" name="opsi-bayar" value="GOPAY">
+                                    <input class="opsi" type="radio" name="opsi-bayar" value="DANA">
                                     <span class="opsi-sider">
                                         <img src="assets/stone-free/Frame 3.svg" class="mechant">
                                         <div class="mordo">
@@ -161,7 +162,7 @@
                             Masukan Email untuk bukti pembayaran dan lain - lain.
                         </p>
 
-                        <input type="text" name="email"> <br>
+                        <input type="text" name="email" required> <br>
                         <div class="btn">
                             <button class="btn-detail" name="submit">Beli sekarang</button>
                         </div> <br>
