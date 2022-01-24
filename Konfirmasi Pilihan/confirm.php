@@ -100,9 +100,9 @@ if (isset($_POST["terima"])) {
                         </a>
                         <button type="button" class="input" name="terima" id="btn">
                             Terima</button>
-                        <a href="../Confirm Payment/index.html">
+                        <!-- <a href="../Confirm Payment/index.html">
                             <input type="button" class="input" value="Konfirm">
-                        </a>
+                        </a> -->
                     </div>
                 </form>
             </div>
