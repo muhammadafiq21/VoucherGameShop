@@ -4,9 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>TokoTokoTok</title>
 </head>
 <body>
+      
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="Logo\TokoTokoTok Logo-wide.png" class="gamepad" alt="logo" width="105px">
+            <!-- <h4>GameVoCS-19</h4> -->
+        </div>
+        <div class="bacaan">
+            <p><font size="4">SUDAH SIAP MENGHABISKAN DOMPET MAMAH?</font></p>
+
+            <!-- <form action="" class="search">
+                <input type="text" placeholder="Apa gitu yakan">
+                <button>search</button>
+            </form> -->
+        </div>
+        <a href="../OurTeam/contact.html" class="contact"><button>Contact &#127939;</button></a>
+    </div>
+
+    <!-- Tulisan -->
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <h1>BUAT APA JAGO <br>KALO GAPUNYA SKIN</h1>
+            </div>
+            <div class="col-2">
+            </div>
+        </div>
+    </div>
+
+    <!-- Iklan  -->
+    <div class="iklan">
+        <div class="cell"><a href="https://duniagames.co.id/discover/article/patch-notes-1-6-50-mobile-legends-claude-kena-nerf-lagi"><img src="iklan\claudenerf.jpg" alt=""></a></div>
+        <div class="cell"><a href="https://duniagames.co.id/discover/article/codm-major-series-season-6-siap-hadir-daftarkan-diri-kamu-sekarang"><img src="iklan\codmIklan.jpg" alt=""></a></div>
+        <div class="cell"><a href="https://www.kabargames.id/kode-redeem-ff-desember/"><img src="iklan\kode-redeem-ff-desember-2021-yang-belum-digunakan.jpg" alt=""></a></div>
+        <div class="cell"><a href="https://duniagames.co.id/discover/article/informasi-seputar-neon-valorant-agent-berkemampuan-kilat-dari-filipina"><img src="iklan\Neon-The-New-Agent-in-Valorant.jpg" alt=""></a></div>
+        <div class="cell"><a href="https://jakpusnews.pikiran-rakyat.com/olahraga/pr-443501969/new-update-redeem-code-genshin-impact-18-januari-2022-dari-mihoyo-mystic-enhancement-ores-siap-dibawa-pulang"><img src="iklan\redeemcodeGenshin.jpg" alt=""></a></div>
+        <div class="cell"><a href="https://www.indoesports.com/news/pubg-mobile/sempat-undang-kontroversi-ini-tim-india-yang-berhasil-lolos-ke-grand-final-pmgc-2021"><img src="iklan\godlike.png" alt=""></a></div>
+    </div>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script>
+        $('.iklan').flickity({
+            // options
+            // cellAlign: 'left',
+            wrapAround: true,
+            autoPlay: true,
+            freeScroll: true
+        });
+    </script>
+
+    <!-- Gamelist -->
+    <div class="gameList">
+        <h1 style="text-align:center;" >Game List</h1>
+        <div class="gameContainer">
+            <div class="card">
+                <div class="title">Valorant</div>
+                <div class="image">
+                    <img src="GameList/valorant.jpg" alt="">
+                </div>
+                <a href="../Halaman Pembelian/buy_page.php" onclick="valueSender('Valorant')">
+                    <button class="tombolBeli" >PILIH VOUCHER ➤</button>
+                </a>
+            </div>
+            <div class="card">
+                <div class="title">Free Fire</div>
+                <div class="image">
+                    <img src="GameList/Pripayer.png" alt="">
+                </div>
+                <a href="../Halaman Pembelian/buy_page.php" onclick="valueSender('Free Fire')">
+                    <button class="tombolBeli">PILIH VOUCHER ➤</button>
+                </a>
+            </div>
+            <div class="card">
+                <div class="title">Mobile Legends</div>
+                <div class="image">
+                    <img src="GameList/molen.jpg" alt="">
+                </div>
+                <a href="../Halaman Pembelian/buy_page.php" onclick="valueSender('Mobile Legends')">
+                    <button class="tombolBeli">PILIH VOUCHER ➤</button>
+                </a>
+            </div>
+            <div class="card">
+                <div class="title">Genshin Impact</div>
+                <div class="image">
+                    <img src="GameList/genshin.jpg" alt="">
+                </div>
+                <a href="../Halaman Pembelian/buy_page.php" onclick="valueSender('Genshin Impact')">
+                    <button class="tombolBeli">PILIH VOUCHER ➤</button>
+                </a>
+            </div>
+            <div class="card">
+                <div class="title">COD Mobile</div>
+                <div class="image">
+                    <img src="GameList/codm.jpg" alt="">
+                </div>
+                <a href="../Halaman Pembelian/buy_page.php" onclick="valueSender('COD Mobile')">
+                    <button class="tombolBeli">PILIH VOUCHER ➤</button>
+                </a>
+            </div>
+            <div class="card">
+                <div class="title">PUBG Mobile</div>
+                <div class="image">
+                    <img src="GameList/pubg.jpg" alt="">
+                    <!-- <img src='https://2.bp.blogspot.com/-uro5WS5mbhA/XhinO8gZCbI/AAAAAAAATRQ/RCVDxLeEoUAVW5UFhC8Txlfs3eRsXT7qACLcBGAsYHQ/w919-h516-p-k-no-nu/pubg-girl-helmet-rifle-uhdpaper.com-4K-5.1748-wp.thumbnail.jpg'/> -->
+                </div>
+                <a href="../Halaman Pembelian/buy_page.php" onclick="valueSender('PUBG Mobile')">
+                    <button class="tombolBeli">PILIH VOUCHER ➤</button>
+                </a>
+            </div>
+        </div>
+    </div>
     
-</body>
+    <script src="Homepage.js"> </script>
+
+    </body>
 </html>
