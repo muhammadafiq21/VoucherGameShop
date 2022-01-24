@@ -1,1 +1,418 @@
-.
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+html {
+  background-color: #1a1b1d;
+  color: antiquewhite;
+}
+
+/* NAVBAR */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 3%;
+  /* border-radius: 10px; */
+  /* background: #24252a; */
+  background: #323232;
+}
+
+.logo {
+  padding-bottom: 2px;
+  transition: all 0.3s ease 0s;
+}
+
+.logo:hover {
+  border-bottom: 3px solid #6db270;
+}
+
+.logo img {
+  width: 150px;
+}
+
+p {
+  cursor: pointer;
+}
+
+p,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: #e2e3e3;
+}
+
+.bacaan {
+  list-style: none;
+}
+
+.bacaan p {
+  transition: all 0.3s ease 0s;
+  font-weight: bold;
+}
+
+.bacaan p:hover {
+  color: #6db270;
+}
+
+.contact button {
+  padding: 7px 20px;
+  border-radius: 50px;
+  background-color: #6db270;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+
+.contact button:hover {
+  background-color: #8ceb8f;
+  color: black;
+  box-shadow: 0px 5px 5px rgb(255, 255, 255);
+}
+
+/* =============================================== */
+
+.container {
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.corner-logo {
+  width: 200px;
+  height: auto;
+}
+
+.head-up {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-corner {
+  display: flex;
+  justify-content: left;
+}
+
+.left-corner > h2 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > a {
+  margin-left: 10px;
+  margin-top: 25px;
+
+  color: antiquewhite;
+}
+
+/* Monitor */
+
+.monitor {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+  grid-template-areas: "kiri kanan";
+  margin-top: 20px;
+}
+
+/* kiri */
+
+.information-game {
+  grid-area: kiri;
+  background-color: none;
+}
+
+.banner-game {
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+.game-gambar-banner {
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+/* Kanan */
+
+.detail-pembayaran {
+  grid-area: kanan;
+  display: block;
+  background-color: none;
+}
+
+.detail-id {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #323232;
+  border-radius: 10px;
+  max-width: 80%;
+  height: 130px;
+}
+
+.detail-id > h2 {
+  margin: 20px 0px 10px 15px;
+}
+
+.detail-id > input {
+  margin-left: 10px;
+  height: 50px;
+  width: 290px;
+
+  font-size: 18px;
+
+  border-radius: 10px;
+}
+
+.detail-id > p {
+  font-size: 10px;
+  margin: 5px;
+  margin-left: 10px;
+}
+
+/* Start Detail Variant */
+
+.detail-varian {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #323232;
+  border-radius: 10px;
+  max-width: 80%;
+  height: auto;
+}
+
+.detail-varian > h2 {
+  margin: 20px 0px 10px 10px;
+}
+
+.detail-varian-voc {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Box Inside */
+
+.card-voc {
+  margin: 10px;
+}
+
+.card-voc > label {
+  cursor: pointer;
+}
+
+.card-voc > label > input[type="radio"] {
+  display: none;
+}
+
+.card-voc > label > .opsi-sider {
+  position: relative;
+  display: inline-block;
+  background: white;
+  padding: 15px 25px;
+  color: #1a1b1d;
+  /* text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5); */
+  font-size: 20px;
+  border-radius: 10px;
+
+  transition: 0.5s;
+  user-select: none;
+  overflow: hidden;
+}
+
+.card-voc > label > .opsi-sider:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.card-voc > label > input[type="radio"]:checked ~ .opsi-sider {
+  background: #6db270;
+}
+
+/* End Box Inside */
+/* Ednd Detail Varian */
+
+/*Start Detail Beli*/
+.detail-beli {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #323232;
+  border-radius: 10px;
+  max-width: 80%;
+  height: auto;
+}
+
+.detail-beli > h2 {
+  margin: 20px 0px 10px 10px;
+}
+
+.detail-beli-voc {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Bayar Mode */
+.card-buy {
+  margin: 10px;
+  width: 100%;
+}
+
+.mordo {
+  display: flex;
+  justify-content: center;
+}
+
+.mechant {
+  width: 130px;
+}
+
+.opsi-sider > div {
+  margin: 10px;
+}
+
+.card-buy > label {
+  cursor: pointer;
+}
+
+.card-buy > label > input[type="radio"] {
+  display: none;
+}
+
+.card-buy > label > .opsi-sider {
+  position: relative;
+  display: flex;
+  background: white;
+  padding: 15px 30px;
+  color: #323232;
+  /* text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5); */
+  font-size: 20px;
+  border-radius: 10px;
+  border-style: none;
+
+  transition: 0.5s;
+  user-select: none;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.card-buy > label > .opsi-sider:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.card-buy > label > input[type="radio"]:checked ~ .opsi-sider {
+  background: #6db270;
+}
+
+/*End Bayar Mode */
+/*End Detail Beli */
+
+/* Start Submit Dan Email */
+
+.detail-email {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #323232;
+  border-radius: 10px;
+  max-width: 80%;
+  height: auto;
+}
+
+.detail-email > h2 {
+  margin: 20px 0px 10px 10px;
+}
+
+.detail-email > input {
+  margin-left: 10px;
+  height: 30px;
+  width: 290px;
+
+  border-radius: 10px;
+}
+
+.detail-email > p {
+  font-size: 10px;
+  margin: 15px;
+}
+
+.detail-email > .btn {
+  display: flex;
+  justify-content: right;
+  margin-right: 20px;
+}
+
+/*Start Button*/
+.btn-detail {
+  font-family: "Quicksand", sans-serif;
+
+  background-color: #6db270;
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6b7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: 0.2s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.btn-detail:hover {
+  background-color: #8ceb8f;
+  color: black;
+  box-shadow: 0px 5px 5px rgb(255, 255, 255);
+}
+
+.btn-detail:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-40 {
+    padding: 0.75rem 1.5rem;
+  }
+}
+/*End Button*/
+/*End Sumbit Dan pinjam*/
