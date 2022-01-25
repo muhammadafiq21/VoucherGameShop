@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
+html {
+  background-color: #1a1b1d;
+  color: antiquewhite;
+}
+
+/* NAVBAR */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,8 +16,8 @@
   display: flex;
   font-family: "Montserrat", sans-serif;
   justify-content: space-between;
-  padding: 7px 3%;
   align-items: center;
+  padding: 7px 3%;
   /* border-radius: 10px; */
   /* background: #24252a; */
   background: #323232;
@@ -32,7 +38,6 @@
 
 p {
   cursor: pointer;
-  margin-bottom: 0;
 }
 
 p,
@@ -41,6 +46,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   text-decoration: none;
+  color: #e2e3e3;
 }
 
 .bacaan {
@@ -48,13 +54,12 @@ button {
 }
 
 .bacaan p {
-  color: #6db270;
   transition: all 0.3s ease 0s;
   font-weight: bold;
 }
 
 .bacaan p:hover {
-  color: #e2e3e3;
+  color: #6db270;
 }
 
 .contact button {
@@ -73,91 +78,341 @@ button {
   box-shadow: 0px 5px 5px rgb(255, 255, 255);
 }
 
-/* body {
-  font-family: "Montserrat", sans-serif;
-  background: #1a1b1d;
-} */
+/* =============================================== */
 
-.payment {
-  border: none;
-  height: 250px;
-  border-radius: 20px;
-  background: #fff;
-}
-.payment_header {
-  background: #6db270;
+.container {
   padding: 20px;
-  border-radius: 20px 20px 0px 0px;
+  font-family: "Montserrat", sans-serif;
 }
 
-.check {
-  margin: 0px auto;
-  width: 50px;
+.corner-logo {
+  width: 200px;
+  height: auto;
+}
+
+.head-up {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-corner {
+  display: flex;
+  justify-content: left;
+}
+
+.left-corner > h2 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > a {
+  margin-left: 10px;
+  margin-top: 25px;
+
+  color: antiquewhite;
+}
+
+/* Monitor */
+
+.monitor {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+  grid-template-areas: "kiri kanan";
+  margin-top: 20px;
+}
+
+/* kiri */
+
+.information-game {
+  grid-area: kiri;
+  background-color: none;
+}
+
+.banner-game {
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+.game-gambar-banner {
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+/* Kanan */
+
+.detail-pembayaran {
+  grid-area: kanan;
+  display: block;
+  background-color: none;
+}
+
+.detail-id {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #323232;
+  border-radius: 10px;
+  max-width: 80%;
+  height: 130px;
+}
+
+.detail-id > h2 {
+  margin: 20px 0px 10px 15px;
+}
+
+.detail-id > input {
+  margin-left: 10px;
   height: 50px;
-  border-radius: 100%;
-  background: #fff;
-  text-align: center;
+  width: 290px;
+
+  font-size: 18px;
+
+  border-radius: 10px;
 }
 
-.check i {
-  vertical-align: middle;
-  line-height: 50px;
-  font-size: 30px;
+.detail-id > p {
+  font-size: 10px;
+  margin: 5px;
+  margin-left: 10px;
 }
 
-.content {
-  text-align: center;
+/* Start Detail Variant */
+
+.detail-varian {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #323232;
+  border-radius: 10px;
+  max-width: 80%;
+  height: auto;
 }
 
-.content h1 {
-  font-size: 25px;
-  padding-top: 10px;
-}
-.content p {
-  margin-bottom: 20px;
+.detail-varian > h2 {
+  margin: 20px 0px 10px 10px;
 }
 
-.content a {
-  color: #fff;
-  border-radius: 70px;
-  /* margin-top: 50px; */
-  padding: 8px 15px;
+.detail-varian-voc {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Box Inside */
+
+.card-voc {
+  margin: 10px;
+}
+
+.card-voc > label {
+  cursor: pointer;
+}
+
+.card-voc > label > input[type="radio"] {
+  display: none;
+}
+
+.card-voc > label > .opsi-sider {
+  position: relative;
+  display: inline-block;
+  background: white;
+  padding: 15px 25px;
+  color: #1a1b1d;
+  /* text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5); */
+  font-size: 20px;
+  border-radius: 10px;
+
+  transition: 0.5s;
+  user-select: none;
+  overflow: hidden;
+}
+
+.card-voc > label > .opsi-sider:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.card-voc > label > input[type="radio"]:checked ~ .opsi-sider {
   background: #6db270;
-  transition: all ease-in-out 0.3s;
 }
 
-.content a:hover {
-  text-decoration: none;
-  background-color: #8ceb8f;
-  color: black;
-  box-shadow: 0px 5px 5px rgb(0, 0, 0);
+/* End Box Inside */
+/* Ednd Detail Varian */
+
+/*Start Detail Beli*/
+.detail-beli {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #323232;
+  border-radius: 10px;
+  max-width: 80%;
+  height: auto;
 }
 
-.riview a {
-  color: #fff;
-  border-radius: 70px;
-  padding: 8px 15px;
+.detail-beli > h2 {
+  margin: 20px 0px 10px 10px;
+}
+
+.detail-beli-voc {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Bayar Mode */
+.card-buy {
+  margin: 10px;
+  width: 100%;
+}
+
+.mordo {
+  display: flex;
+  justify-content: center;
+}
+
+.mechant {
+  width: 130px;
+}
+
+.opsi-sider > div {
+  margin: 10px;
+}
+
+.card-buy > label {
+  cursor: pointer;
+}
+
+.card-buy > label > input[type="radio"] {
+  display: none;
+}
+
+.card-buy > label > .opsi-sider {
+  position: relative;
+  display: flex;
+  background: white;
+  padding: 15px 30px;
+  color: #323232;
+  /* text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5); */
+  font-size: 20px;
+  border-radius: 10px;
+  border-style: none;
+
+  transition: 0.5s;
+  user-select: none;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.card-buy > label > .opsi-sider:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.card-buy > label > input[type="radio"]:checked ~ .opsi-sider {
   background: #6db270;
-  transition: all ease-in-out 0.3s;
-  text-decoration: none;
 }
 
-.riview a:hover {
+/*End Bayar Mode */
+/*End Detail Beli */
+
+/* Start Submit Dan Email */
+
+.detail-email {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #323232;
+  border-radius: 10px;
+  max-width: 80%;
+  height: auto;
+}
+
+.detail-email > h2 {
+  margin: 20px 0px 10px 10px;
+}
+
+.detail-email > input {
+  margin-left: 10px;
+  height: 30px;
+  width: 290px;
+
+  border-radius: 10px;
+}
+
+.detail-email > p {
+  font-size: 10px;
+  margin: 15px;
+}
+
+.detail-email > .btn {
+  display: flex;
+  justify-content: right;
+  margin-right: 20px;
+}
+
+/*Start Button*/
+.btn-detail {
+  font-family: "Quicksand", sans-serif;
+
+  background-color: #6db270;
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6b7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: 0.2s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.btn-detail:hover {
   background-color: #8ceb8f;
   color: black;
   box-shadow: 0px 5px 5px rgb(255, 255, 255);
 }
 
-.riview {
-  text-align: center;
+.btn-detail:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
-.footer {
-  width: 100%;
-  height: 50px;
-  padding-left: 10px;
-  line-height: 50px;
-  background: #333;
-  color: #fff;
-  position: absolute;
-  bottom: 0px;
+
+@media (min-width: 768px) {
+  .button-40 {
+    padding: 0.75rem 1.5rem;
+  }
 }
+/*End Button*/
+/*End Sumbit Dan pinjam*/
