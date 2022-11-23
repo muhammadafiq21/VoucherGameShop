@@ -2,6 +2,6 @@
 
 ### Screenshot
 
-![](./HomePage.png)
+![](./ScreenShoot/HomePage.png)
 ![](./OurTeam.png)
 ![](./Pembelian.png)
