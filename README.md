@@ -3,5 +3,5 @@
 ### Screenshot
 
 ![](./ScreenShoot/HomePage.png)
-![](./OurTeam.png)
-![](./Pembelian.png)
+![](./ScreenShoot/OurTeam.png)
+![](./ScreenShoot/Pembelian.png)
